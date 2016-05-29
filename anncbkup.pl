@@ -45,7 +45,7 @@ my $enable_filexfer_board = 			'7212ff00';
 my $list_ip_interface_val_slot =			'7002ff00';
 my $list_ip_interface_val_ip =			'7213ff00';
 my $list_media_gateways_ip =			'6c03ff00';
-my $list_media_gateways_number =		'6c00ff00';
+my $list_media_gateways_number =			'6c00ff00';
 
 
 my $sftp;

@@ -39,7 +39,7 @@ import cli_ossi;
 
 my $enable_filexfer_login = 			'720fff00';
 my $enable_filexfer_passwd = 			'7210ff00';
-my $enable_filexfer_reenterpasswd = 	'7214ff00';
+my $enable_filexfer_reenterpasswd = 		'7214ff00';
 my $enable_filexfer_secure = 			'7211ff00';
 my $enable_filexfer_board = 			'7212ff00';
 my $list_ip_interface_val_slot =		'7002ff00';

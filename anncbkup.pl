@@ -220,7 +220,7 @@ while ($pbxcounter < 5) {
 					$valIP = $VAL_DUMP->{$list_ip_interface_val_ip},
 					$val_dir = $base_dir . $pbx . "/" . $valboard . "/" . timestamp();
 					
-					#Need to make filexfer isn't already enabled.
+					#Need to make sure filexfer isn't already enabled.
 					disablefilexfer($node,$valboard);
 
 					enableSFTP($node,$valboard);

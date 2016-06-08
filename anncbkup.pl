@@ -245,9 +245,12 @@ while ($pbxcounter < 5) {
 					                            
 					                                           );
 
+					# The block_size option significantly slows the transfer.
+					# However, could not successfully pull the announcement files without
+					# limiting the size to 512KB.
 					$sftp->rget( 
 								"/annc/", 
-								$val_dir);
+								$val_dir,block_size => 512); 
 
 					say "\nAnnouncements backed up successfully for $pbx VAL Board $valboard";
 

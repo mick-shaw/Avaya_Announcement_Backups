@@ -248,9 +248,16 @@ while ($pbxcounter < 5) {
 					# The block_size option significantly slows the transfer.
 					# However, could not successfully pull the announcement files without
 					# limiting the size to 512KB.
+					
+					# The copy_time parameter overwrites the time attributes of the announcements.
+					# I have this set "false" because I have a cleanup script that deletes announcements
+					# from the archive server that are older than 30 days.
+					# If you want to perserve the announcement time attribute,
+					# simply remove the copy_time option
+					
 					$sftp->rget( 
 								"/annc/", 
-								$val_dir,block_size => 512); 
+								$val_dir,block_size => 512, copy_time => 0); 
 
 					say "\nAnnouncements backed up successfully for $pbx VAL Board $valboard";
 

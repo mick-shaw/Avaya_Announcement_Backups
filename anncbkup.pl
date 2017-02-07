@@ -4,7 +4,6 @@
 # 	     Aura Announcement Backup Application
 #
 # Author:  Mick Shaw
-# Company: Potomac Integration and Consulting
 # Date:    05/29/2016
 #
 #
